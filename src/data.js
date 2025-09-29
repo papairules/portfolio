@@ -55,3 +55,17 @@ export const professionalExperience = [
     ],
   },
 ];
+export const education = [
+  {
+    university: "The University of Texas at Dallas",
+    degree: "Master of Science, Business Analytics and AI",
+    dates: "Aug 2024 - May 2026",
+    details: "Dean's Excellence Scholarship recipient",
+  },
+  {
+    university: "West Bengal University of Technology",
+    degree: "Bachelor of Technology, Electronics and Instrumentation Engineering",
+    dates: "",
+    details: "",
+  },
+];
