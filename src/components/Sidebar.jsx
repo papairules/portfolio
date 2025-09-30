@@ -1,14 +1,22 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Sidebar.css';
 
 function Sidebar() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+  // Close sidebar on route change on mobile
+  useEffect(() => {
+    if (isOpen && window.innerWidth < 768) {
+      setIsOpen(false);
+    }
+  }, [location]);
 
   return (
     <>

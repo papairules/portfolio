@@ -5,6 +5,7 @@ body {
   background-color: #16181d;
   color: #e4e6eb;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -21,7 +22,7 @@ html {
 .main-content {
   position: relative;
   z-index: 1;
-  padding-left: 280px; 
+  transition: padding-left 0.3s ease-in-out;
 }
 
 .content-wrapper {
@@ -39,13 +40,11 @@ header {
   margin-bottom: 3rem;
 }
 
-/* General style for all headings */
 h1, h2, h3 {
   color: #ffffff;
   font-weight: 500;
 }
 
-/* Styles for the headings inside the top header */
 header h1,
 header h2 {
   display: inline-block;
@@ -53,7 +52,6 @@ header h2 {
   padding-bottom: 0.5rem;
 }
 
-/* Corrected styles for the main section and job titles */
 .main-content h2,
 .main-content h3 {
   display: block;
@@ -63,4 +61,11 @@ header h2 {
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #3a3f44;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 2rem 1.5rem;
+  }
 }

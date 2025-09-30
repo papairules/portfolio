@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 80vh; /* Ensures it takes up most of the screen height */
+  min-height: 80vh;
 }
 
 .home-picture {
@@ -27,7 +27,7 @@
   font-size: 1.5rem;
   color: #adb5bd;
   margin: 0.5rem 0 1.5rem 0;
-  height: 60px; /* Reserves space to prevent layout shifts */
+  height: 60px;
 }
 
 .home-intro {
@@ -47,4 +47,24 @@
 .social-links a:hover {
   color: #4dabf7;
   transform: scale(1.2);
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .home-picture {
+    width: 180px;
+    height: 180px;
+  }
+
+  .home-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .animated-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .home-intro {
+    font-size: 1rem;
+  }
 }
