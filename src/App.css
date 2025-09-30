@@ -5,6 +5,9 @@ body {
   background-color: #16181d;
   color: #e4e6eb;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 #tsparticles {
   position: fixed;

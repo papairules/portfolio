@@ -1,0 +1,15 @@
+.about-section {
+  padding-top: 2rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #adb5bd; /* A slightly lighter gray for readability */
+  margin-bottom: 1.5rem;
+}
+
+.about-section .highlight {
+  color: #e4e6eb; /* A brighter color for important text */
+  font-weight: 500;
+}
