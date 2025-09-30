@@ -7,9 +7,8 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Education from './components/Education';
 
-// The "Home" page content is now its own component
 const Home = () => (
-  <header>
+  <header id="home">
     <h1>Abin Roy</h1>
     <p>+1 2146776571 | abinroy90@gmail.com</p>
     <a href="https://www.linkedin.com/in/abinroy/" target="_blank" rel="noopener noreferrer">

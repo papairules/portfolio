@@ -15,10 +15,9 @@ function Sidebar() {
           <li><Link to="/about">About</Link></li>
           <li><Link to="/experience">Experience</Link></li>
           <li><Link to="/skills">Skills</Link></li>
-          {/* We'll add Projects and Testimonials later */}
-          {/* <li><Link to="/projects">Projects</Link></li> */}
+          <li><Link to="/projects">Projects</Link></li>
           <li><Link to="/education">Education</Link></li>
-          {/* <li><Link to="/testimonials">Testimonials</Link></li> */}
+          <li><Link to="/testimonials">Testimonials</Link></li>
         </ul>
       </nav>
     </aside>

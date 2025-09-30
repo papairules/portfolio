@@ -16,6 +16,17 @@ function About() {
       <p>
         I am passionate about solving ambitious problems and building the intelligent systems that will drive our future.
       </p>
+
+      <div className="clients-section">
+        <h3>Clients Served</h3>
+        <div className="logo-container">
+          <img src="/assets/aetna.png" alt="Aetna" />
+          <img src="/assets/mrcooper.png" alt="Mr. Cooper" />
+          <img src="/assets/rsa.png" alt="RSA" />
+          <img src="/assets/virgin-atlantic.png" alt="Virgin Atlantic" />
+          <img src="/assets/vodafone.png" alt="Vodafone" />
+        </div>
+      </div>
     </section>
   );
 }

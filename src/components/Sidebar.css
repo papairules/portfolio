@@ -9,7 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; /* Add this line */
+  z-index: 10; /* Add this line */
 }
 
 .profile-picture {
