@@ -1,23 +1,63 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
   margin: 0;
+  background-color: #16181d;
+  color: #e4e6eb;
 }
 
-#root {
-  max-width: 800px;
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+  padding-left: 280px; 
+}
+
+.content-wrapper {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
-  background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-top: 2rem;
-  border-radius: 8px;
+  padding: 2rem 3rem;
 }
 
+a {
+  color: #4dabf7;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* General style for all headings */
 h1, h2, h3 {
-  color: #222;
-  border-bottom: 1px solid #eeeeee;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Styles for the headings inside the top header */
+header h1,
+header h2 {
+  display: inline-block;
+  border-bottom: 1px solid #3a3f44;
   padding-bottom: 0.5rem;
+}
+
+/* Corrected styles for the main section and job titles */
+.main-content h2,
+.main-content h3 {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #3a3f44;
 }
