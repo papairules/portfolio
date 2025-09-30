@@ -5,14 +5,15 @@
 .about-section p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #adb5bd; /* A slightly lighter gray for readability */
+  color: #adb5bd;
   margin-bottom: 1.5rem;
 }
 
 .about-section .highlight {
-  color: #e4e6eb; /* A brighter color for important text */
+  color: #e4e6eb;
   font-weight: 500;
 }
+
 .clients-section {
   margin-top: 4rem;
   text-align: center;
@@ -35,13 +36,15 @@
   gap: 2rem;
 }
 
+/* Increased logo image size even more */
 .logo-container img {
-  height: 40px; /* Adjust height as needed */
-  max-width: 150px;
-  filter: grayscale(100%) brightness(150%);
-  transition: filter 0.3s ease-in-out;
+  height: 90px;              /* Now much larger */
+  max-width: 300px;          /* Increased max width */
+  filter: none;
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .logo-container img:hover {
-  filter: grayscale(0%);
+  filter: brightness(115%);
+  transform: scale(1.09);
 }

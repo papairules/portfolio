@@ -1,5 +1,12 @@
 import './About.css';
 
+// Import images from src/assets
+import aetnaLogo from '../assets/aetna.png';
+import mrcooperLogo from '../assets/mrcooper.png';
+import rsaLogo from '../assets/rsa.png';
+import virginAtlanticLogo from '../assets/virgin-atlantic.png';
+import vodafoneLogo from '../assets/vodafone.png';
+
 function About() {
   return (
     <section id="about" className="about-section">
@@ -20,11 +27,11 @@ function About() {
       <div className="clients-section">
         <h3>Clients Served</h3>
         <div className="logo-container">
-          <img src="/assets/aetna.png" alt="Aetna" />
-          <img src="/assets/mrcooper.png" alt="Mr. Cooper" />
-          <img src="/assets/rsa.png" alt="RSA" />
-          <img src="/assets/virgin-atlantic.png" alt="Virgin Atlantic" />
-          <img src="/assets/vodafone.png" alt="Vodafone" />
+          <img src={aetnaLogo} alt="Aetna" />
+          <img src={mrcooperLogo} alt="Mr. Cooper" />
+          <img src={rsaLogo} alt="RSA" />
+          <img src={virginAtlanticLogo} alt="Virgin Atlantic" />
+          <img src={vodafoneLogo} alt="Vodafone" />
         </div>
       </div>
     </section>
