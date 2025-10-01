@@ -1,13 +1,13 @@
 import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Home.css';
-import profilePic from '../assets/profile-picture.jpg'; // Make sure your profile picture is in src/assets
+import profilePic from '../assets/profile-picture.jpg';
 
 function Home() {
   return (
     <div className="home-container">
       <img src={profilePic} alt="Abin Roy" className="home-picture" />
-      <h1>Abin Roy</h1>
+      {/* The <h1>Abin Roy</h1> heading has been removed */}
       <TypeAnimation
         sequence={[
           'AI & Machine Learning Engineer',
@@ -17,7 +17,7 @@ function Home() {
           'Business Analytics Professional',
           2000,
         ]}
-        wrapper="span"
+        wrapper="div"
         speed={50}
         className="animated-subtitle"
         repeat={Infinity}
@@ -27,8 +27,6 @@ function Home() {
       </p>
       <div className="social-links">
         <a href="https://www.linkedin.com/in/abinroy/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-        <a href="https://github.com/papairules" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-        {/* Add other links here */}
       </div>
     </div>
   );
