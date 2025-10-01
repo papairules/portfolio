@@ -86,7 +86,7 @@ export const professionalExperience = [
     company: "Mr. Cooper",
     role: "Machine Learning Engineer (Co-op)",
     location: "Dallas",
-    dates: "Aug 2021 - Present",
+    dates: "Aug 2025 - Present",
     logo: cooperLogo,
     intro: "My role at Mr. Cooper has been to operate at the cutting edge of AI, specifically applying Large Language Models and Agentic AI to solve tangible business problems and enhance operational efficiency.",
     projects: [
@@ -160,7 +160,7 @@ export const education = [
     degree: "Master of Science, Business Analytics and AI",
     dates: "Aug 2024 - May 2026",
     logo: utdLogo,
-    gpa: "3.75",
+    gpa: "3.8",
     details: "Dean's Excellence Scholarship recipient.",
     courses: [
       "Advance Statistics for Data Science", "Applied Econometrics and Time Series Analysis", "Applied Machine Learning", "Business Analytics with R", "Causal Analytics and A/B testing", "Database for Business Analytics", "Foundation of Digital Product management", "Marketing Web analytics and Insights", "Predictive Analytics for Data science", "Prescriptive Analytics",
