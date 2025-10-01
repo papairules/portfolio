@@ -1,6 +1,5 @@
 .about-section {
-  /* This line was causing the extra gap and has been removed. */
-  /* padding-top: 2rem; */ 
+  /* This conflicting line has been REMOVED. */
 }
 
 .about-section p {

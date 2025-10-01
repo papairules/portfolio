@@ -19,50 +19,40 @@ html {
   z-index: -1;
 }
 
+/* UPDATED: Less gap at top, more at bottom */
 .main-content {
   position: relative;
   z-index: 1;
-  padding-top: 80px; /* Keeps content from hiding behind the navbar */
+  padding-top: 60px;        /* Reduced gap below navbar */
+  padding-bottom: 48px;     /* Added comfortable bottom space */
 }
 
 .content-wrapper {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 3rem; /* We set vertical padding to 0 and control space below */
+  padding: 0 3rem; /* Horizontal padding only */
 }
 
-/* THIS IS THE KEY FIX FOR ALL PAGES */
-/* It targets the first element on every page (like the About section or Home container) and gives it a consistent top padding. */
+/* THIS IS THE FINAL ADJUSTMENT
+   It targets the main container on every page and applies a slightly smaller top padding.
+*/
 .content-wrapper > section,
 .content-wrapper > div {
-  padding-top: 2.5rem;
+  padding-top: 1.5rem !important;
 }
 
 /* This rule removes the default browser margin from page titles that was causing the extra gap */
 .content-wrapper h2 {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
-
 
 a {
   color: #4dabf7;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
 h1, h2, h3 {
   color: #ffffff;
   font-weight: 500;
-}
-
-header h1,
-header h2 {
-  display: inline-block;
-  border-bottom: 1px solid #3a3f44;
-  padding-bottom: 0.5rem;
 }
 
 .main-content h2,
@@ -83,6 +73,6 @@ header h2 {
   
   .content-wrapper > section,
   .content-wrapper > div {
-    padding-top: 2rem;
+    padding-top: 1.5rem !important;
   }
 }
