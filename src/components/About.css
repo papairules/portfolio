@@ -1,5 +1,6 @@
 .about-section {
-  padding-top: 2rem;
+  /* This line was causing the extra gap and has been removed. */
+  /* padding-top: 2rem; */ 
 }
 
 .about-section p {
@@ -36,10 +37,9 @@
   gap: 2rem;
 }
 
-/* Increased logo image size even more */
 .logo-container img {
-  height: 90px;              /* Now much larger */
-  max-width: 300px;          /* Increased max width */
+  height: 90px;
+  max-width: 300px;
   filter: none;
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }

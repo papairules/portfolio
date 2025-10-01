@@ -12,6 +12,12 @@
   padding-top: 2rem;
 }
 
+/* This new rule removes the extra space from the VERY FIRST job entry */
+.job-entry:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
 .job-entry h3 {
   text-align: left;
   border: none;
@@ -61,9 +67,9 @@
 }
 
 .job-logo {
-  height: 50px; /* Increase this value */
+  height: 50px;
   width: auto;
-  max-width: 120px; /* Also increase max-width slightly */
+  max-width: 120px;
   object-fit: contain;
   background-color: #fff;
   border-radius: 5px;
