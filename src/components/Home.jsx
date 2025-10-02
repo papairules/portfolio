@@ -1,5 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa'; // FaGithub has been removed
 import './Home.css';
 import profilePic from '../assets/profile-picture.jpg';
 
@@ -7,7 +7,6 @@ function Home() {
   return (
     <div className="home-container">
       <img src={profilePic} alt="Abin Roy" className="home-picture" />
-      {/* The <h1>Abin Roy</h1> heading has been removed */}
       <TypeAnimation
         sequence={[
           'AI & Machine Learning Engineer',
@@ -27,6 +26,8 @@ function Home() {
       </p>
       <div className="social-links">
         <a href="https://www.linkedin.com/in/abinroy/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+        {/* The GitHub link that was here has been removed. */}
+        <a href="mailto:abinroy90@gmail.com"><FaEnvelope /></a>
       </div>
     </div>
   );
