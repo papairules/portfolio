@@ -93,7 +93,7 @@ export const professionalExperience = [
       {
         title: "Project Showcase: The AI-Powered Product Data Agent",
         challenge: "Business and sales agents were losing significant time and creating inefficiencies by manually searching for crucial customer information across three separate applications.",
-        solution: "I took the lead in developing a product data agent using the Google ADK framework, powered by the Gemini 2.0 Flash model. This involved engineering a multi-agent system where a master agent intelligently routes user queries to sub-agents. These sub-agents then generate and execute the appropriate SQL queries against GCP BigQuery, delivering real-time results in a dynamic markdown table.",
+        solution: "Developed a data agent product using the Google ADK framework, powered by the Gemini 2.0 Flash model. This involved engineering a multi-agent system where a master agent intelligently routes user queries to sub-agents. These sub-agents then generate and execute the appropriate SQL queries against GCP BigQuery, delivering real-time results in a dynamic markdown table.",
         outcome: "This AI agent unified the data landscape for our teams, increasing their efficiency by 3x. The innovation is projected to save the company an estimated $1 million-plus annually in time and resources. I further optimized the system by performing load testing with the Locust framework, implementing asynchronous functions that reduced system latency by 5x.",
       },
     ],
