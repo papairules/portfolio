@@ -21,7 +21,7 @@ function About() {
         As a <span className="highlight">Machine Learning Engineer</span>, I am now deepening my expertise as a <span className="highlight">Master of Science in Business Analytics and AI</span> candidate at The University of Texas at Dallas, where I was awarded the Dean's Excellence Scholarship. My recent work involves engineering sophisticated Agentic AI systems with frameworks like Google ADK and models like Gemini 1.5 Flash, pushing the boundaries of intelligent automation and data interaction.
       </p>
       <p>
-        I am passionate about solving ambitious problems and building the intelligent systems that will drive our future.
+        I am passionate about solving ambitious problems and building the intelligent systems that will create significant business impact.
       </p>
 
       <div className="clients-section">
