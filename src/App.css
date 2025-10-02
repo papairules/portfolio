@@ -19,12 +19,10 @@ html {
   z-index: -1;
 }
 
-/* UPDATED: Less gap at top, more at bottom */
 .main-content {
   position: relative;
   z-index: 1;
-  padding-top: 60px;        /* Reduced gap below navbar */
-  padding-bottom: 48px;     /* Added comfortable bottom space */
+  padding-top: 80px; /* Space to clear the 80px navbar */
 }
 
 .content-wrapper {
@@ -33,12 +31,13 @@ html {
   padding: 0 3rem; /* Horizontal padding only */
 }
 
-/* THIS IS THE FINAL ADJUSTMENT
-   It targets the main container on every page and applies a slightly smaller top padding.
+/* THIS IS THE NEW, DEFINITIVE FIX
+  It targets the main container on every page (like the <section> in About or the <div> in Home)
+  and applies a single, consistent top padding, overriding all other files.
 */
 .content-wrapper > section,
 .content-wrapper > div {
-  padding-top: 1.5rem !important;
+  padding-top: 2rem !important;
 }
 
 /* This rule removes the default browser margin from page titles that was causing the extra gap */
