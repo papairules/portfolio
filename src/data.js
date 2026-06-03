@@ -1,5 +1,5 @@
 // Corrected logo imports with './' path
-import cooperLogo from './assets/cooper.png';
+import cooperLogo from './assets/cooper.png'; // Used for Rocket
 import tcsLogo from './assets/tcs.png';
 import cognizantLogo from './assets/cognizant.png';
 import infosysLogo from './assets/infosys.jpg';
@@ -13,15 +13,15 @@ export const skillsData = [
     subCategories: [
       {
         title: "Concepts & Models",
-        skills: ["Machine Learning", "Deep Learning", "NLP (Natural Language Processing)", "Neural Networks", "Transformers", "Reinforcement Learning", "Predictive Modeling"],
+        skills: ["Machine Learning", "Deep Learning", "NLP (Natural Language Processing)", "Neural Networks", "Transformers", "Reinforcement Learning", "Predictive Modeling", "Classification & Regression"],
       },
       {
         title: "Technologies & Frameworks",
-        skills: ["Vertex AI", "OpenAI API", "KNIME", "Google Cloud Platform (GCP)"],
+        skills: ["Vertex AI", "OpenAI API", "Dialogflow CX", "Google Cloud Platform (GCP)", "Scikit-learn", "Pandas", "NumPy"],
       },
       {
         title: "Workflows",
-        skills: ["AI Agents & Agent Development", "Gen AI", "LLM Fine Tuning", "Prompt Engineering"],
+        skills: ["AI Agents", "LangGraph", "RAG", "LLM Fine Tuning", "NL-to-SQL", "MLOps", "Model Inference Pipelines"],
       },
     ],
   },
@@ -30,19 +30,19 @@ export const skillsData = [
     subCategories: [
       {
         title: "Languages",
-        skills: ["Python", "R", "SQL", "NoSQL", "Google BigQuery", "Unix Shell Script", "PowerShell"],
+        skills: ["Python", "R", "SQL", "NoSQL", "Google BigQuery", "TypeScript"],
       },
       {
         title: "Databases & Warehousing",
-        skills: ["BigQuery", "Oracle", "SQL Server", "Teradata", "MySQL", "MongoDB", "Hadoop", "DB2", "Data Warehousing"],
+        skills: ["BigQuery", "Snowflake", "Oracle", "MySQL", "MongoDB", "Data Warehousing"],
       },
       {
         title: "ETL & Data Integration",
-        skills: ["Informatica PowerCenter", "Ab Initio", "GCP Data Fusion", "Data Modeling", "Data Quality"],
+        skills: ["Apache Airflow", "Spark", "Databricks", "Data Modeling", "Feature Engineering"],
       },
       {
         title: "BI & Visualization",
-        skills: ["Power BI", "MicroStrategy", "Microsoft Excel", "SharePoint", "Qlik Sense", "Data Visualization"],
+        skills: ["Power BI", "MicroStrategy", "Data Visualization"],
       },
     ],
   },
@@ -51,7 +51,7 @@ export const skillsData = [
     subCategories: [
       {
         title: "Core Skills",
-        skills: ["Data Analysis", "Time Series Forecasting", "Causal Inference", "Data Mining", "A/B Testing", "Hypothesis Testing"],
+        skills: ["Data Analysis", "Time Series Forecasting", "Causal Inference", "Text Processing", "Imbalanced Data Handling", "Model Evaluation (Precision/Recall/F1)"],
       },
       {
         title: "Statistical Methods",
@@ -68,11 +68,11 @@ export const skillsData = [
     subCategories: [
       {
         title: "Methodologies",
-        skills: ["Agile & Waterfall", "SDLC"],
+        skills: ["Agile", "SDLC", "CI/CD"],
       },
       {
         title: "Development & Ops Tools",
-        skills: ["JIRA", "GitHub", "Azure DevOps", "HP ALM", "MS Office"],
+        skills: ["JIRA", "Git", "GitHub", "Azure DevOps", "Locust (Load Testing)"],
       },
       {
         title: "Professional Skills",
@@ -81,42 +81,49 @@ export const skillsData = [
     ],
   },
 ];
+
 export const professionalExperience = [
   {
-    company: "Mr. Cooper",
-    role: "Machine Learning Engineer (Co-op)",
+    company: "Rocket",
+    role: "AI/ML Engineer",
     location: "Dallas",
-    dates: "Aug 2025 - Present",
-    logo: cooperLogo,
-    intro: "My role at Mr. Cooper has been to operate at the cutting edge of AI, specifically applying Large Language Models and Agentic AI to solve tangible business problems and enhance operational efficiency.",
+    dates: "May 2025 - Present",
+    logo: cooperLogo, 
+    intro: "My focus is on designing end-to-end ML pipelines, building NLP systems, and deploying generative AI solutions to drive significant business value and optimize operations.",
     projects: [
       {
-        title: "Project Showcase: The AI-Powered Product Data Agent",
-        challenge: "Business and sales agents were losing significant time and creating inefficiencies by manually searching for crucial customer information across three separate applications.",
-        solution: "Developed a data agent product using the Google ADK framework, powered by the Gemini 2.0 Flash model. This involved engineering a multi-agent system where a master agent intelligently routes user queries to sub-agents. These sub-agents then generate and execute the appropriate SQL queries against GCP BigQuery, delivering real-time results in a dynamic markdown table.",
-        outcome: "This AI agent unified the data landscape for our teams, increasing their efficiency by 3x. The innovation is projected to save the company an estimated $1 million-plus annually in time and resources. I further optimized the system by performing load testing with the Locust framework, implementing asynchronous functions that reduced system latency by 5x.",
+        title: "Project Showcase: Generative AI & NL-to-SQL Pipelines",
+        challenge: "Business users required a seamless, intuitive method to query complex, structured datasets without needing deep technical expertise.",
+        solution: "Engineered robust NL-to-SQL pipelines utilizing Gemini 2.0 and RAG-based retrieval frameworks. I designed end-to-end ML pipelines from data ingestion to model inference, deeply integrating BigQuery, Vertex AI, and custom Python services. To ensure high performance, I executed asynchronous Python and Locust-based load testing, which successfully reduced API latency by 5x.",
+        outcome: "This AI-driven architecture enabled natural language querying over vast structured datasets, projecting over $1M+ in annual savings through massive efficiency gains.",
+      },
+      {
+        title: "Project Showcase: NLP Sentiment Modeling & Voice Agents",
+        challenge: "The organization needed to automate authentication workflows and systematically extract actionable insights from high volumes of customer interactions.",
+        solution: "Developed and deployed advanced Dialogflow CX voice agents to handle complex authentication workflows. Simultaneously, I built NLP-based sentiment models processing over 50,000 monthly call transcripts using Vertex AI and BigQuery. I also trained and tuned various classification models (logistic regression, decision trees, ensemble methods) to predict customer churn and refinance likelihood, focusing on precision, recall, and F1-scores for imbalanced datasets.",
+        outcome: "The voice agents reduced average handle time by 40% and improved accuracy to 98.5%. The sentiment analysis and predictive models directly contributed to a 12% improvement in overall CSAT.",
       },
     ],
   },
   {
     company: "Tata Consultancy Services",
-    role: "Data Lead & Migration Lead",
+    role: "Data Lead",
     location: "London",
     dates: "Jan 2021 - Jul 2024",
     logo: tcsLogo,
-    intro: "As a consultant with TCS, I led high-stakes data initiatives for two global industry leaders, focusing on modernization, automation, and leadership.",
+    intro: "Consulting for Virgin Atlantic Airways and Vodafone UK, I focused on architecting distributed, GCP-native data platforms and feature engineering to support downstream machine learning and analytics at scale.",
     projects: [
       {
-        title: "Engagement: Data Lead for Virgin Atlantic Airways",
-        challenge: "I spearheaded a critical ETL migration project for the airline's People and Finance modules, managing the full lifecycle from architecture review and design to technical specifications for over 150 tables. A key part of my role was serving as the communication bridge between technical teams and 8 key business stakeholders.",
-        solution: "My leadership in dissecting business needs and aligning technical solutions drove a 28.5% reduction in project delivery time. Furthermore, I implemented a suite of Power BI dashboards that enabled real-time business insights, cutting reporting time by 44.7% and saving the airline $37,190 annually.",
-        outcome: null,
+        title: "Engagement: ML Data Pipelines & Feature Engineering",
+        challenge: "Downstream analytics and machine learning models required robust, highly available, and large-scale structured datasets.",
+        solution: "Prepared large-scale structured datasets and feature sets to fuel ML workflows. I orchestrated complex data pipelines processing 2M+ records daily utilizing BigQuery, Spark, and Apache Airflow on GCP. I also led the development of distributed data platforms encompassing over 150 tables.",
+        outcome: "Achieved a 97.8% CSAT for large-scale customer dataset management and improved overall platform delivery time by 28.5%.",
       },
       {
-        title: "Engagement: Data Migration Lead for Vodafone",
-        challenge: "My objective was to enhance data handling efficiency and product quality for the telecommunications giant. I architected a robust automation solution using BigQuery that transformed the QA testing process.",
-        solution: "This solution reduced manual effort by 38.5%, directly boosting QA throughput and saving the company $32,173 annually. Beyond my technical contributions, I focused heavily on team development. I mentored a cross-functional team of 12, leading them to a 39.5% increase in delivery speed over six months through targeted workshops and feedback. I also refined the hiring process by conducting over 70 technical interviews, which decreased onboarding time for new hires by 19.8%.",
-        outcome: null,
+        title: "Engagement: Workflow Automation & Team Leadership",
+        challenge: "Manual data workflows were creating bottlenecks, resulting in inefficiencies and elevated operational costs for the client.",
+        solution: "Architected automated data workflows for Vodafone entirely within BigQuery. Alongside technical execution, I mentored and upskilled a cross-functional engineering team of 12 members.",
+        outcome: "The automation reduced manual effort by 38.5%, saving $32K annually, while team mentorship initiatives improved delivery speed by 39.5%.",
       },
     ],
   },
@@ -126,29 +133,29 @@ export const professionalExperience = [
     location: "India",
     dates: "Dec 2016 - Jan 2021",
     logo: cognizantLogo,
-    intro: "As a consultant for Royal and Sun Alliance (Canada), my role was to enhance the performance of their data platforms and deliver high-quality business intelligence reports to end-users, achieving a consistent CSAT score of 98.4%.",
+    intro: "As a consultant for Royal and Sun Alliance (Canada), I developed fault-tolerant data migration frameworks and optimized large-scale ETL architectures.",
     projects: [
       {
-        title: null,
-        challenge: "The existing ETL architecture was struggling to keep up with data growth, causing performance bottlenecks.",
-        solution: "I conducted a thorough analysis of the architecture and implemented targeted improvements that unlocked new performance capabilities. This allowed for the seamless processing of over 2M+ records daily and increased throughput by 17.2%. I also designed and deployed automated reporting dashboards that streamlined data visualization for over 10 stakeholders.",
-        outcome: "The architectural improvements ensured platform stability, while the automated dashboards saved 15 hours of manual work weekly, amounting to $41,000 in annual savings.",
+        title: "Engagement: Data Platform Optimization",
+        challenge: "The existing data architecture was struggling to keep pace with data growth, causing performance bottlenecks for downstream analytics.",
+        solution: "Implemented targeted optimizations to the large-scale ETL architecture to increase throughput by 17.2%. I also designed and deployed automated reporting dashboards that streamlined data visualization for key stakeholders.",
+        outcome: "The enhancements enabled the seamless daily processing of 2M+ records without performance degradation. The automated dashboards saved 15 hours of manual work weekly, equating to $41,000 in annual savings, while maintaining a 98.4% CSAT score.",
       },
     ],
   },
   {
     company: "Infosys Technology Limited",
-    role: "Data Analyst & System Engineer",
+    role: "Senior Data Analyst & System Engineer",
     location: "India",
     dates: "Jul 2014 - Dec 2016",
     logo: infosysLogo,
-    intro: "My time at Infosys, consulting for Aetna Health Insurance, was a foundational period where I focused on ensuring software quality and driving efficiency through process optimization and early automation initiatives.",
+    intro: "Consulting for Aetna Health Insurance, I managed complex testing processes, formulated data scenarios, and drove early automation initiatives.",
     projects: [
       {
-        title: null,
-        challenge: "I was responsible for validating new software features to ensure they met stringent business requirements, smoothing the path for successful product launches.",
-        solution: "By designing and executing highly detailed test scripts, I successfully validated over 30 software features, which enhanced product release timelines by 23.2%. In a key early automation project, I used Excel VB scripting to automate critical reporting tasks, saving 625 manual hours ($2,473) and empowering the team to focus on higher-value, decision-making activities.",
-        outcome: null,
+        title: "Engagement: Process Optimization & Automation",
+        challenge: "Testing processes and reporting required significant manual intervention, risking delays in product delivery.",
+        solution: "Managed end-to-end testing processes by comprehending business requirements and devising diverse data scenarios. I subsequently automated critical reporting workflows utilizing SQL and scripting.",
+        outcome: "The automation initiatives successfully saved $30K annually and ensured high data integrity across testing environments.",
       },
     ],
   },
@@ -160,10 +167,20 @@ export const education = [
     degree: "Master of Science, Business Analytics and AI",
     dates: "Aug 2024 - May 2026",
     logo: utdLogo,
-    gpa: "3.8",
-    details: "Dean's Excellence Scholarship recipient.",
+    gpa: "3.7",
+    details: "Dean's Excellence Scholarship recipient and Nash Leader",
     courses: [
-      "Advance Statistics for Data Science", "Applied Econometrics and Time Series Analysis", "Applied Machine Learning", "Business Analytics with R", "Causal Analytics and A/B testing", "Database for Business Analytics", "Foundation of Digital Product management", "Marketing Web analytics and Insights", "Predictive Analytics for Data science", "Prescriptive Analytics",
+      "Advance Statistics for Data Science", 
+      "Applied Econometrics and Time Series Analysis", 
+      "Applied Machine Learning", 
+      "Applied Natural Language Processing",
+      "Business Analytics with R", 
+      "Causal Analytics and A/B testing", 
+      "Database for Business Analytics", 
+      "Foundation of Digital Product management", 
+      "Marketing Web analytics and Insights", 
+      "Predictive Analytics for Data science", 
+      "Prescriptive Analytics",
     ],
     activities: [
       {
@@ -185,14 +202,14 @@ export const education = [
       },
     ],
     progress: {
-      completed: 27,
+      completed: 36,
       total: 36,
     },
   },
   {
     university: "West Bengal University of Technology",
     degree: "Bachelor of Technology, Electronics and Instrumentation Engineering",
-    dates: "",
+    dates: "Graduated 2014",
     logo: wbutLogo,
     gpa: null,
     details: null,
@@ -241,6 +258,12 @@ export const education = [
 
 export const projectsData = [
   {
+    title: "Medical Agentic Framework – AI Concierge",
+    description: "Developed a cloud-native Agentic RAG chatbot deployed on Cloud Run using Dialogflow CX, Vertex AI, and Gemini 2.5 Flash. The system acts as a medical concierge featuring symptom severity triage, distress detection, medication interaction checking, and nationwide hospital lookup.",
+    skills: ["Python", "Vertex AI", "Dialogflow CX", "Gemini LLM", "RAG", "Streamlit", "Cloud Run", "Docker", "GCP"],
+    link: "/projects/Medical-Agentic-Framework.pdf",
+  },
+  {
     title: "Telecom Churn Prediction – AI-Driven Insights",
     description: "An AI-enabled workflow to predict customer churn using KNIME, combining feature generation with LLM prompting and predictive modeling with Random Forest to achieve 87% accuracy.",
     skills: ["KNIME", "Predictive Modeling", "Random Forest", "XGBoost", "LLM Prompting", "GenAI"],
@@ -265,6 +288,7 @@ export const projectsData = [
     link: "/projects/Revenue-Insights.pdf",
   },
 ];
+
 export const testimonialsData = [
   {
     name: "Abhinay Purohit",
@@ -275,7 +299,7 @@ export const testimonialsData = [
   },
   {
     name: "Shivani Gupta",
-    title: "Data Engineer, Boost Mobile", // UPDATED
+    title: "Data Engineer, Boost Mobile",
     relationship: "Shivani reported directly to Abin",
     text: "I have had the chance to work under Abin's leadership for about an year. His expertise on GCP and ETL technologies could only inspire one to learn and grow. He is one of the best mentors and leaders I could ask for. I have learnt a lot from the way he can quickly adapt to different situations and excel in delivering tasks even under pressure.",
     linkedIn: "https://www.linkedin.com/in/abinroy/details/recommendations/",
@@ -296,14 +320,14 @@ export const testimonialsData = [
   },
   {
     name: "Avik Sur",
-    title: "Senior Analyst, EY", // UPDATED
+    title: "Senior Analyst, EY", 
     relationship: "Avik reported directly to Abin",
     text: "I have had the good fortune of working under Abin's leadership in a digital transformation project for one of Europe's telecom giants for about a year which was also my first project. During this time , I have received immense guidance and support ranging from understanding business logic to technical implementation.",
     linkedIn: "https://www.linkedin.com/in/abinroy/details/recommendations/",
   },
   {
     name: "Rakhi Roy",
-    title: "Senior Manager, RBC (Royal Bank of Canada)", // UPDATED
+    title: "Senior Manager, RBC (Royal Bank of Canada)",
     relationship: "Rakhi was Abin’s mentor",
     text: "He had shown a competency to understand the widely diverse business logic that helped us to elevate and improvise the QA process that are being followed. His incredible dedication and desire to learn lead to his ultimate role with the company as a QA Analyst. I would always be glad, to be able to work with Abin in any capacity because of his “all hands on deck” attitude.",
     linkedIn: "https://www.linkedin.com/in/abinroy/details/recommendations/",
